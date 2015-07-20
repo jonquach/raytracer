@@ -1,0 +1,33 @@
+<window Y="1000" X="1000">
+  <scene NAME="Example4 ">
+    <ambiance value="121.5" />
+    <eye>
+      <location X="0" Y="0" Z="0"/>
+    </eye>
+    <object>
+      <plan>
+        <location X="0" Y="0" Z="-50"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <color R="170" G="34" B="0" />
+      </plan>
+    </object>
+    <object>
+      <cone>
+        <location X="200" Y="0" Z="0"/>
+        <rotation X="-20" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="10" G="0" B="60" />
+      </cone>
+    </object>
+    <light>
+      <location X="200" Y="-10" Z="10"/>
+      <color R="0" G="255" B="0" />
+    </light>
+    <light>
+      <location X="0" Y="0" Z="0"/>
+      <color R="255" G="255" B="255" />
+    </light>
+  </scene>
+</window>

@@ -1,0 +1,20 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic">
+    <eye>
+      <location X="-3000" Y="0" Z="500"/>
+    </eye>
+    <object>
+      <sphere>
+        <location X="400" Y="-400" Z="210"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>170</radius>
+        <color R="255" G="255" B="255"  />
+      </sphere>
+    </object>
+    <light>
+      <location X="-500" Y="-1000" Z="1400"/>
+      <color R="255" G="255" B="255" />
+    </light>
+  </scene>
+</window>

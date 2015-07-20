@@ -1,0 +1,96 @@
+/*
+** light.c for light in /home/frayss_c/rendu/MUL_2013_rtv1
+** 
+** Made by frayss_c
+** Login   <frayss_c@epitech.net>
+** 
+** Started on  Sun Mar 16 18:10:33 2014 frayss_c
+** Last update Sun Jun  8 11:04:13 2014 
+*/
+
+#include <math.h>
+#include <stdio.h>
+#include "../include/rtv1.h"
+#include "../include/prototype.h"
+
+void	my_normal(t_all *all, int obj)
+{
+  if (obj == 1)
+    {
+      all->n.nx = cos(all->n.px / 10) * (sqrt(pow(all->n.nx, 2) + pow(all->n.ny, 2) + pow(all->n.nz, 2)) / 10);
+//all->n.px;
+      all->n.ny = all->n.py;//cos(all->n.py / 10) * (sqrt(pow(all->n.nx, 2) + pow(all->n.ny, 2) + pow(all->n.nz, 2)) / 10);
+      all->n.nz = all->n.pz;
+    }
+  else if (obj == 2)
+    {
+      all->n.nx = 0;
+      all->n.ny = cos(all->n.py / 10) * (sqrt(pow(all->n.nx, 2) + pow(all->n.ny, 2) + pow(all->n.nz, 2)) / 10);
+      all->n.nz = 100;
+    }
+  else if (obj == 3)
+    {
+      all->n.nx = all->n.px;
+      all->n.ny = all->n.py;
+      all->n.nz = 0;
+    }
+  else if (obj == 4)
+    {
+      all->n.nx = all->n.px + 0;
+      all->n.ny = all->n.py + 0;
+      all->n.nz = 0;
+    }
+}
+
+void	my_cos(t_all *all, double k, int obj, t_object *object)
+{
+  translate1(object, &all->lum);
+  all->n.px = all->eye.x + (k * all->eye.vx);
+  all->n.py = all->eye.y + (k * all->eye.vy);
+  all->n.pz = all->eye.z + (k * all->eye.vz);
+  my_normal(all, obj);
+  object->normx = all->n.nx;
+  object->normy = all->n.nx;
+  object->normz = all->n.nx;
+  all->lum.vx = all->lum.x - all->n.px;
+  all->lum.vy = all->lum.y - all->n.py;
+  all->lum.vz = all->lum.z - all->n.pz;
+  rotatel(all, object);
+  all->n.cos = (all->n.nx * (all->lum.vx))
+    + (all->n.ny * (all->lum.vy))
+    + (all->n.nz * (all->lum.vz));
+  all->n.a2 = (all->lum.vx) * (all->lum.vx)
+    + (all->lum.vy) * (all->lum.vy)
+    + (all->lum.vz) * (all->lum.vz);
+  if (all->n.cos < 0)
+    all->n.cos = 0;
+  else
+    {
+      all->n.a1 = all->n.nx * all->n.nx + all->n.ny * all->n.ny
+	+ all->n.nz * all->n.nz;
+      all->n.cos = all->n.cos / sqrt(all->n.a1 * all->n.a2);
+    }
+  if (object->bright == 0)
+    {
+      object->color_tmp[0] = all->n.cos * object->color[0];
+      object->color_tmp[1] = all->n.cos * object->color[1]; 
+      object->color_tmp[2] = all->n.cos * object->color[2];
+      /* object->color_tmp[0] = all->n.cos *(object->color_tmp[0] / log(0) + 1.000); */
+      /* object->color_tmp[1] = all->n.cos * (object->color_tmp[1] / log(0) + 1.000); */
+      /* object->color_tmp[2] = all->n.cos * (object->color_tmp[2] / log(0) + 1.000); */
+    }
+  else if (object->bright > 0)
+    {
+      object->color_tmp[0] = all->n.cos *
+	(object->color[0] * (1 - object->bright) + all->lum.color[0] *
+	 object->bright);
+      object->color_tmp[1] = all->n.cos *
+	(object->color[1] * (1 - object->bright) + all->lum.color[1] *
+	 object->bright);
+      object->color_tmp[2] = all->n.cos *
+	(object->color[2] * (1 - object->bright) + all->lum.color[2] *
+	 object->bright);
+    }
+  unrotatel(all);
+  translate2(object, &all->lum);
+}

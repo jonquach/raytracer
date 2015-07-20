@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window Y="1000" X="1000">
+  <scene NAME="Example7 ">
+    <ambiance value="0"/>
+    <eye>
+      <location X="0" Y="200" Z="0"/>
+    </eye>
+    <object>
+      <sphere>
+        <location X="375" Y="70" Z="40"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.3"/>
+        <radius>20</radius>
+        <color R="255" G="0" B="0"/>
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="350" Y="0" Z="-80"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.5"/>
+        <radius>20</radius>
+        <color R="255" G="50" B="50"  />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="400" Y="-70" Z="-20"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.2"/>
+        <radius>20</radius>
+        <color R="255" G="0" B="0"  />
+      </sphere>
+    </object>
+    <object>
+      <plan>
+        <location X="0" Y="0" Z="-100"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.3"/>
+        <color R="255" G="255" B="255" />
+      </plan>
+    </object>
+    <object>
+      <plan>
+        <location X="0" Y="0" Z="150"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.3"/>
+        <color R="255" G="255" B="255" />
+      </plan>
+    </object>
+    <object>
+     <cylinder>
+        <location X="250" Y="-80" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.5"/>
+        <radius>25</radius>
+        <color R="0" G="0" B="255" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="250" Y="80" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.5"/>
+        <radius>25</radius>
+        <color R="0" G="0" B="255" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="500" Y="-60" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.5"/>
+        <radius>20</radius>
+        <color R="0" G="0" B="255" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="500" Y="60" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.5"/>
+        <radius>20</radius>
+        <color R="0" G="0" B="255" />
+      </cylinder>
+    </object>
+    <light>
+      <location X="150" Y="200" Z="95"/>
+      <color R="130" G="230" B="70" />
+    </light>
+    <light>
+      <location X="150" Y="-200" Z="95"/>
+      <color R="255" G="0" B="0" />
+    </light>
+  </scene>
+</window>

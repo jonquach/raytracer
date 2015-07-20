@@ -1,0 +1,78 @@
+<window Y="600" X="945">
+  <scene NAME="Fiesta">
+    <ambiance value="0 />
+    <eye>
+      <location X="0" Y="0" Z="0"/>
+      <rotation X="0" Y="0" Z="0"/>
+    </eye>
+    <object>
+      <sphere>
+        <location X="2000" Y="-300" Z="-500"/>
+        <rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" />
+        <radius>50</radius>
+        <color R="255" G="0" B="0"  />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="5000" Y="-200" Z="-600"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0" />
+        <radius>50</radius>
+        <color R="0" G="255" B="0"  />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="3000" Y="-2000" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="0" G="0" B="255" />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="6000" Y="-1400" Z="-600"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="255" G="255" B="255" />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="3000" Y="-400" Z="-500"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="0" G="255" B="255" />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="3000" Y="-500" Z="-500"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="255" G="0" B="255" />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="3000" Y="-250" Z="-450"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>100</radius>
+        <color R="255" G="255" B="255" />
+      </sphere>
+    </object>
+    <object>
+    </object>
+    <light>
+      <location X="2000" Y="0" Z="2000"/>
+      <color R="255" G="255" B="255" />
+    </light>
+  </scene>
+</window>

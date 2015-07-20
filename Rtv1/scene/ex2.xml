@@ -1,0 +1,24 @@
+<window Y="1000" X="1000">
+  <scene NAME="Example2 ">
+    <ambiance value="1" />
+    <eye>
+      <location X="0" Y="0" Z="0"/>
+    </eye>
+    <object>
+      <plan>
+        <location X="0" Y="0" Z="-500"/>
+        <rotation X="10" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0.1"/>
+        <color R="0" G="200" B="0" />
+      </plan>
+    </object>
+    <light>
+      <location X="2000" Y="-600" Z="-300"/>
+      <color R="0" G="0" B="255" />
+    </light>
+    <light>
+      <location X="2000" Y="300" Z="-100"/>
+      <color R="255" G="0" B="0" />
+    </light>
+  </scene>
+</window>

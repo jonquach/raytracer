@@ -1,0 +1,73 @@
+<window Y="1000" X="1000">
+  <scene NAME="Basic">
+    <eye>
+      <location X="-3000" Y="0" Z="500"/>
+    </eye>
+    <object>
+      <sphere>
+        <location X="400" Y="-400" Z="170"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>170</radius>
+        <color R="255" G="255" B="255"  />
+      </sphere>
+    </object>
+    <object>
+      <plan>
+        <location X="0" Y="0" Z="-100"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <color R="255" G="25" B="125" />
+      </plan>
+    </object>
+    <object>
+      <cylinder>
+        <location X="500" Y="500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>70</radius>
+        <color R="255" G="25" B="0" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="-100" Y="-500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>70</radius>
+        <color R="255" G="25" B="0" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="-100" Y="500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>70</radius>
+        <color R="255" G="25" B="0" />
+      </cylinder>
+    </object>
+    <object>
+      <cylinder>
+        <location X="500" Y="-500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>70</radius>
+        <color R="255" G="25" B="0" />
+      </cylinder>
+    </object>
+    <object>
+      <cone>
+        <location X="400" Y="-200" Z="100"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>170</radius>
+        <color R="255" G="255" B="255"/>
+      </cone>
+    </object>
+    <light>
+      <location X="-500" Y="-1000" Z="1400"/>
+      <color R="255" G="255" B="255" />
+    </light>
+  </scene>
+</window>

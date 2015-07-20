@@ -1,0 +1,27 @@
+<window X="1000" Y="1000">
+  <scene NAME="Basic" ANTIALIASING="0">
+    <cameras>
+      <camera>
+	<location X="-300" Y="0" Z="0"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<fov>10</fov>
+      </camera>
+    </cameras>
+    <object>
+      <sphere TYPE="normal">
+	<location X="400" Y="0" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<radius>100</radius>
+	<color>FF0000</color>
+      </sphere>
+    </object>
+      <lights>
+	<light TYPE="diffuse">
+	  <location X="-100" Y="0" Z="50"/>
+	  <intensity>1.0</intensity>
+	  <color>FFFFFF</color>
+	</light>
+      </lights>
+  </scene>
+</window>

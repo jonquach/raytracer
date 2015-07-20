@@ -1,0 +1,39 @@
+<window Y="5252" X="5252">
+  <scene NAME="Basic">
+    <eye>
+      <location X="-300" Y="0" Z="0"/>
+    </eye>
+    <object>
+      <sphere>
+	<location X="400" Y="0" Z="100"/>
+	<rotation X="10" Y="10" Z="10"/>
+	<effect BRIGHTNESS="0"/>
+	<radius>300</radius>
+	<color R="0" G="25" B="155" />
+      </sphere>
+    </object>
+    <object>
+      <cylindre>
+	<location X="100" Y="0" Z="100"/>
+	<rotation X="20" Y="20" Z="30"/>
+	<effect BRIGHTNESS="1"/>
+	<radius>400</radius>
+	<color R="0" G="255" B="255" />
+      </cylindre>
+    </object>
+    <object>
+      <cone>
+	<location X="0" Y="0" Z="100"/>
+	<rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0.2"/>
+	<radius>100</radius>
+	<color R="100" G="0" B="5" />
+      </cone>
+    </object>
+    <light>
+      <location X="-100" Y="0" Z="50"/>
+      <intensity>1.0</intensity>
+      <color R="0" G="255" B="255" />
+    </light>
+    </scene>
+</window>

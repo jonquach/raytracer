@@ -1,0 +1,118 @@
+<window Y="1200" X="945">
+  <scene NAME="chateau">
+    <ambiance value="0" />
+    <eye>
+      <location X="0" Y="0" Z="0"/>
+      <rotation X="0" Y="0" Z="0"/>
+    </eye>
+    <object>
+      <sphere>
+        <location X="4000" Y="900" Z="-500"/>
+        <rotation X="0" Y="0" Z="0"/>
+	<effect BRIGHTNESS="0" />
+        <radius>50</radius>
+        <color R="255" G="0" B="0"  />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="5000" Y="-200" Z="-600"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0" />
+        <radius>50</radius>
+        <color R="0" G="255" B="0"  />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="3000" Y="-2000" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="0" G="0" B="255" />
+      </sphere>
+    </object>
+    <object>
+      <sphere>
+        <location X="6000" Y="-1400" Z="-600"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+        <radius>50</radius>
+        <color R="255" G="255" B="255" />
+      </sphere>
+    </object>
+  <object>
+      <cylinder>
+        <location X="3000" Y="1500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+	<check R="0" G="100" B="100" />
+        <radius>100</radius>
+        <color R="0" G="150" B="60" />
+      </cylinder>
+  </object>
+  <object>
+      <cylinder>
+        <location X="2800" Y="1500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+	<check R="0" G="100" B="100" />
+        <radius>100</radius>
+        <color R="0" G="150" B="60" />
+      </cylinder>
+  </object>
+  <object>
+      <cylinder>
+        <location X="2600" Y="1500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+	<check R="0" G="100" B="100" />
+        <radius>100</radius>
+        <color R="0" G="150" B="60" />
+      </cylinder>
+  </object>
+  <object>
+      <cylinder>
+        <location X="2400" Y="1500" Z="0"/>
+        <rotation X="0" Y="0" Z="0"/>
+        <effect BRIGHTNESS="0"/>
+	<check R="0" G="100" B="100" />
+        <radius>100</radius>
+        <color R="0" G="150" B="60" />
+      </cylinder>
+  </object>
+  <object>
+    <sphere>
+      <location X="3000" Y="300" Z="10"/>
+      <rotation X="0" Y="0" Z="0"/>
+      <effect BRIGHTNESS="0"/>
+      <trouble value="1" />
+      <radius>100</radius>
+      <color R="255" G="255" B="255" />
+    </sphere>
+  </object>
+  <object>
+    <sphere>
+      <location X="3000" Y="800" Z="200"/>
+      <rotation X="0" Y="0" Z="0"/>
+      <effect BRIGHTNESS="0"/>
+      <check R="255" G="0" B="0" />
+      <radius>200</radius>
+      <color R="100" G="100" B="100" />
+    </sphere>
+  </object>
+  <object>
+    <plan>
+      <location X="3000" Y="0" Z="-1000"/>
+      <rotation X="0" Y="0" Z="0"/>
+      <effect BRIGHTNESS="0"/>
+      <trouble VALUE="1" />
+      <color R="0" G="255" B="255" />
+    </plan>
+    </object>
+    <light>
+      <location X="2000" Y="0" Z="2000"/>
+      <color R="255" G="255" B="255" />
+    </light>
+  </scene>
+</window>
